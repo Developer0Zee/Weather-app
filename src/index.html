@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-200 flex justify-center items-center min-h-screen px-4">
+    <div class="w-full max-w-4xl bg-white shadow-lg rounded-lg p-6">
+
+        <section id="heading" class="bg-blue-600 text-white text-center py-3 rounded-md">
+            <h1 class="text-xl sm:text-2xl font-bold">Weather Dashboard</h1>
+        </section>
+
+        <section id="result"></section>
+
+        <section class="search bg-gray-100 p-4 rounded-lg mt-4">
+            <h2 class="text-lg font-semibold">Enter a city Name</h2>
+            <div class="flex flex-col sm:flex-row items-center gap-3 mt-2">
+                <input name="searchBar" class="border p-2 w-full sm:w-3/4 rounded-md" id="searchBar" placeholder="E.g. Delhi, Noida, Gurgaon">
+                <button class="searchButton bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-700 w-full sm:w-auto">Search</button>
+            </div>
+
+            <div class="flex items-center justify-center mt-3">
+                <hr class="flex-grow border-gray-400">
+                <p class="mx-2 text-gray-500">or</p>
+                <hr class="flex-grow border-gray-400">
+            </div>
+
+            <button class="locationButton mt-3 w-full bg-gray-300 p-2 rounded-md hover:bg-blue-400">Use Current Location</button>
+        </section>
+
+        <section id="searchedCity" class="mt-4">
+            <div class="cityContainer bg-blue-500 text-white p-4 rounded-md shadow-md text-center">
+                <h2 class="text-lg font-bold">City Name (Date)</h2>
+                <p>Temperature: --°C</p>
+                <p>Wind: -- M/S</p>
+                <p>Humidity: --%</p>
+            </div>
+        </section>
+
+        <section id="forCast" class="mt-6">
+            <h2 class="text-lg font-semibold">5-Day Forecast</h2>
+            <div class="foreCastContainer grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-3 mt-3"></div>
+        </section>
+
+    </div>
+
+    <script src="../index.js"></script>
+</body>
+
+</html>
