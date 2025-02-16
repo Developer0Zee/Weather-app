@@ -24,13 +24,25 @@
                 <button class="searchButton bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-700 w-full sm:w-auto">Search</button>
             </div>
 
+
+
+            <div id="recentSearchContainer" class="relative mt-2 hidden">
+                <button id="recentSearchToggle" class="bg-gray-300 text-gray-700 px-4 py-2 w-full hover:bg-blue-600 rounded-md">Recently Searched</button>
+                <ul id="recentSearchList" class="absolute left-0 right-0 bg-white border border-gray-300 rounded-md mt-1 shadow-lg hidden">
+                    <!-- Cities will be dynamically added here -->
+                </ul>
+            </div>
+
+
+
+
             <div class="flex items-center justify-center mt-3">
                 <hr class="flex-grow border-gray-400">
                 <p class="mx-2 text-gray-500">or</p>
                 <hr class="flex-grow border-gray-400">
             </div>
 
-            <button class="locationButton mt-3 w-full bg-gray-300 p-2 rounded-md hover:bg-blue-400">Use Current Location</button>
+            <button class="locationButton mt-3 w-full bg-gray-300 p-2 rounded-md hover:bg-blue-600">Use Current Location</button>
         </section>
 
         <section id="searchedCity" class="mt-4">
